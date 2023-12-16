@@ -1,0 +1,38 @@
+---
+name: "🔄 Rclone"
+on:
+  push:
+    branches: [main]
+    paths:
+      - "./png/**"
+      - "./svg/**"
+      - ".github/workflows/rclone.yml"
+  workflow_dispatch: {}
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    env:
+      svg_local: "svg"
+      svg_remote: "r2:images/icons/svg"
+      png_local: "png"
+      png_remote: "r2:images/icons/png"
+    steps:
+      - name: "⤵️ Check out code from GitHub"
+        uses: actions/checkout@v4
+      - name: "⏫ Sync SVG"
+        uses: z-shell/.github/actions/rclone@main
+        with:
+          config: ${{ secrets.R2_RCLONE_CONFIG }}
+          args: "sync -u ${{ env.svg_local }} ${{ env.svg_remote }}"
+          debug: false
+      - name: "⏫ Sync PNG"
+        uses: z-shell/.github/actions/rclone@main
+        with:
+          config: ${{ secrets.R2_RCLONE_CONFIG }}
+          args: "sync -u ${{ env.png_local }} ${{ env.png_remote }}"
+          debug: false
