@@ -9,11 +9,9 @@ Thank you for your interest in contributing to our icon repository! To ensure th
 - Icons should be named after their full name, using the [Kebab Case](https://wiki.c2.com/?KebabCase) naming convention. For example, "Facebook Messenger" should be named `facebook-messenger.png`.
 - Monochrome icons should default to a dark version. Light versions should be named `service-light.png`. If a light version is not available, use [https://pinetools.com/colorize-image](https://pinetools.com/colorize-image) to change its color.
 
-
 ## 💻 Gitmoji Commits
 
 - Please use [Gitmoji](https://gitmoji.dev/) in your commit messages. This helps us keep our commit history clear and easy to understand. For example, you might use the `🍱` emoji for a commit that updates an icon's color, or the `📝` emoji for a commit that updates the documentation.
-
 
 ## 🤝 Contributing
 

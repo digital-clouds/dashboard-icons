@@ -59,16 +59,19 @@ $ wget https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/example.png
 ```
 
 ## 🎨 Icons
-**⚠️ Warning!**  Going to this page will load every single icon in the repository. This might cause:
+
+**⚠️ Warning!** Going to this page will load every single icon in the repository. This might cause:
+
 - 📉 An excessive amount of data use.
 - 💻 System slowdowns.
-	- 🌐 Browser crashes.
+  - 🌐 Browser crashes.
 
-*If your device cannot handle loading more than 1000 images, we advise to not go to this page.*
+_If your device cannot handle loading more than 1000 images, we advise to not go to this page._
 
 ➡️ Click [**here**](ICONS.md) to display all icons.
 
 ## 🎉 Contributing Guidelines
+
 Please read the [Contributing Guidelines](CONTRIBUTING.md) before contributing to this project.
 
 ## 📜 Legal
@@ -76,4 +79,3 @@ Please read the [Contributing Guidelines](CONTRIBUTING.md) before contributing t
 Please read our [LICENSE](LICENSE) for information regarding the use of our software and assets. By accessing or using this repository, you agree to be bound by the terms and conditions of the license.
 
 If you have any questions or concerns regarding the license, please contact us at contact@walkx.fyi before using or distributing the contents of this repository.
-
