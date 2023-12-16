@@ -3,10 +3,10 @@ name: "🔄 Rclone"
 on:
   push:
     branches: [main]
-    paths:
-      - "./png/**"
-      - "./svg/**"
-      - ".github/workflows/rclone.yml"
+    paths:      
+      - ./png/*.png
+      - ./svg/*.svg
+      - .github/workflows/rclone.yml
   workflow_dispatch: {}
 
 concurrency:
