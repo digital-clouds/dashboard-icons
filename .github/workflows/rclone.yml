@@ -2,13 +2,13 @@
 name: "🔄 Rclone"
 on:
   push:
-    paths: 
-      - '**.svg'
-      - '**.png'
+    paths:
+      - "**.svg"
+      - "**.png"
   workflow_dispatch:
     inputs:
       debug:
-        description: 'Dry-run'
+        description: "Dry-run"
         required: false
         type: boolean
         default: false
@@ -19,7 +19,7 @@ concurrency:
 
 jobs:
   sync:
-    if: github.repository == 'digital-clouds/dashboard-icons'  
+    if: github.repository == 'digital-clouds/dashboard-icons'
     runs-on: ubuntu-latest
     env:
       svg_local: "svg"
